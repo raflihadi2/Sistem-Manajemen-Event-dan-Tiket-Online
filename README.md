@@ -39,12 +39,19 @@
 
 eventiq/
 ├── admin/ # Halaman dashboard admin
+
 ├── assets/ # CSS, JS
+
 ├── includes/ # QR Generator, koneksi, auth, dll.
+
 ├── sql/ # Berisi dump database, function, procedure
+
 ├── bayar.php # Proses transaksi
+
 ├── validasi.php # Proses validasi QR tiket
+
 ├── login.php, register.php, index.php, dll.
+
 
 ## 🧠 Database Detail
 
