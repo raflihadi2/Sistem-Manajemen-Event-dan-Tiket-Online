@@ -8,6 +8,8 @@
 ## 🧾 Deskripsi Proyek
 **EventIQ** adalah sistem pemesanan tiket berbasis web yang memungkinkan pengguna untuk memesan tiket, memvalidasi tiket menggunakan QR Code, dan admin dapat mengelola event serta laporan penjualan. Sistem ini dibangun menggunakan PHP native dan MySQL serta memenuhi seluruh ketentuan Ujian Akhir Praktik (UAP) yang ditetapkan.
 
+![image](https://github.com/user-attachments/assets/61b8fa85-0d6d-4b6d-b181-fc2b48cc1734)
+
 ## 🔐 Fitur Utama
 - Registrasi dan Login pengguna
 - Daftar event & detail event
@@ -53,6 +55,10 @@ eventiq/
 
 ├── login.php, register.php, index.php, dll.
 
+## 🧠 Stored Procedures
+Stored procedure bertindak seperti SOP internal yang menetapkan alur eksekusi berbagai operasi penting di sistem pemesanan tiket ini. Procedure ini disimpan langsung di lapisan database, sehingga dapat menjamin konsistensi, efisiensi, dan keamanan eksekusi, terutama dalam sistem terdistribusi atau multi-user.
+![image](https://github.com/user-attachments/assets/0ee0dfa1-fee2-48b4-9461-4eb958f551f9)
+
 
 ## 🧠 Database Detail
 
@@ -83,6 +89,11 @@ BEGIN
   WHERE id_event = NEW.id_event;
 END
 ```
+## 🚨 Trigger
+
+Triggers `before_update_event_cek_kuota_harga` dan `before_insert_event_cek_kuota_harga` digunakan untuk mencegah hasil negatif saat tiket dimasukkan dan dibeli. Seperti palang pintu yang hanya terbuka jika syarat tertentu terpenuhi, trigger mencegah input data yang tidak valid atau berisiko merusak integritas sistem.
+![image](https://github.com/user-attachments/assets/c8283608-b4bc-4b83-911a-5bf30efdda74)
+
 ## 🔓 Login & Role
 Login: login.php
 
