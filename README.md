@@ -38,6 +38,7 @@
 ## 🗃️ Struktur Folder
 
 eventiq/
+
 ├── admin/ # Halaman dashboard admin
 
 ├── assets/ # CSS, JS
