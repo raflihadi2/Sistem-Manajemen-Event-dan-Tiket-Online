@@ -56,8 +56,8 @@ eventiq/
 
 ## 🧠 Database Detail
 
-### 🔁 Stored Procedure
 ```sql
+🔁 Stored Procedure
 CREATE PROCEDURE pesan_tiket(IN uid INT, IN eid INT, IN jumlah INT)
 BEGIN
   DECLARE harga DECIMAL(10,2);
